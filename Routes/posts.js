@@ -22,6 +22,7 @@ rotuer.post('/', async(req, res) => {
    const post = new Post({
       title: req.body.title,
       description: req.body.description,
+      place: req.body.place
    });
 
 try {
@@ -54,6 +55,7 @@ rotuer.patch('/:postId', async (req, res) => {
          {$set: {
             title: req.body.title,
       description: req.body.description,
+      place: req.body.place
          }}
       )
       res.json(updatePost)

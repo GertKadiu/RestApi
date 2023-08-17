@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
+// Modeli i Databazes 
 
+const mongoose = require('mongoose');
 
 const PostSchema = mongoose.Schema({
    title:{
@@ -7,6 +8,10 @@ const PostSchema = mongoose.Schema({
       require: true
    },
    description: {
+      type: String,
+      require: true
+   },
+   place: {
       type: String,
       require: true
    },

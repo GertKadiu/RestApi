@@ -12,8 +12,10 @@ app.use(bodyParser.json())
 // Import the Routes
 
 const postRoute = require('./Routes/posts')
+const UserRoute = require('./Routes/users')
 
 app.use('/posts', postRoute)
+app.use('/users', UserRoute)
 
 // Routes
 
